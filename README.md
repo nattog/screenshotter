@@ -1,6 +1,6 @@
 # screenshotter
 
-Norns mod to take screenshots of screen
+Norns mod to take screenshots
 
 Install in maiden
 
