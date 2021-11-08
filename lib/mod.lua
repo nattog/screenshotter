@@ -23,14 +23,13 @@ get_unique_file_name = function(directory, name, extension)
     return test_against .. extension
 end
 
-api.screenshot = function(name, directory)
+api.capture = function(name)
    local filename = name ~= nil and name or get_date()
-   local dir = directory ~= nil and directory or ""
 
-   local unique_name = get_unique_file_name(_path.dust..dir, filename, ".png")
+   local unique_name = get_unique_file_name(_path.dust, filename, ".png")
 
-   print('capturing '.. dir..unique_name)
-  _norns.screen_export_png(_path.dust..dir..unique_name)
+   print('capturing '.. unique_name)
+  _norns.screen_export_png(_path.dust..unique_name)
 end
 
 return api
