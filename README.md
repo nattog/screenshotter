@@ -8,6 +8,8 @@ Install in maiden
 ;install https://github.com/nattog/screenshotter
 ```
 
+Enable in mods menu
+
 Add to a script like this
 
 ```
